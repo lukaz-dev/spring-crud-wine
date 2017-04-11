@@ -30,7 +30,7 @@
                         </button>
                         <th:block th:each="error : ${#fields.detailedErrors()}">
                             <div>
-                                <i class="fa  fa-exclamation-circle"></i>
+                                <i class="glyphicon glyphicon-alert"></i>
                                 <span th:text="${error.message}"></span>
                             </div>
                         </th:block>

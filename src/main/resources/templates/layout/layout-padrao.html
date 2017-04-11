@@ -53,13 +53,15 @@
             <nav class="aw-menu  js-menu">
 
                 <ul class="aw-menu__list">
-                    <li class="aw-menu__item" sec:authorize="hasRole('ROLE_CADASTRAR_VINHO')">
-                        <a th:href="@{/vinhos/novo}"><i class="glyphicon glyphicon-home"></i><span>Cadastro vinho</span></a>
-                    </li>
 
                     <li class="aw-menu__item" sec:authorize="hasRole('ROLE_PESQUISAR_VINHO')">
                         <a th:href="@{/vinhos}"><i class="glyphicon glyphicon-search"></i><span>Pesquisa vinho</span></a>
                     </li>
+
+                    <li class="aw-menu__item" sec:authorize="hasRole('ROLE_CADASTRAR_VINHO')">
+                        <a th:href="@{/vinhos/novo}"><i class="glyphicon glyphicon-plus"></i><span>Cadastro vinho</span></a>
+                    </li>
+
                 </ul>
 
             </nav>
