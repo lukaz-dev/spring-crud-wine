@@ -12,5 +12,4 @@ public class WineApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }
